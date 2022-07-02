@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
+
+$defaulSpacing  : 16px
+$smallWidth     : 100px
+$ligth          : azure
+$dark           : rgb(25,25,25)
+$defaulBorderR  : 4px
+$animationMinDurarion: 1s
+
+.left
+    width: 60%
+
+header
+    min-height: 90vh
+body
+    font-family: Roboto, arial, 'sans serif'
+
+.dark-mode, body
+    background-color: $dark
+    color: $ligth
+
+nav
+    padding: calc($defaulSpacing/2)
+
+#logo
+    &:hover
+        animation: 1s ease-in hoverLogo
+        transform: scale(1.1)
+
+.burger 
+    min-width: $smallWidth
+    padding: $defaulSpacing 
+    div
+        height: calc($defaulSpacing/2)
+        width: 80%
+        background-color: $ligth
+        border-radius: $defaulBorderR
+
+.grid 
+    display: grid
+
+
+.flex 
+    display: flex
+    gap: calc($defaulSpacing/2)
+
+.flex-center 
+    align-items: center
+    justify-content: center
+
+.flex-space-b
+    justify-content: space-between
+.flex-row 
+    flex-direction: row
+
+.flex-column
+    flex-direction: column
+
+.up-burger-a
+    transform: translate(0,16px) rotate(45deg)
+    animation: $animationMinDurarion up-burger
+
+
+.down-burger-a
+    transform: translate(0,-16px) rotate(135deg)
+    animation: $animationMinDurarion down-burger
+
+.middle-burger-a
+    transform: scale(0)
+    animation: $animationMinDurarion middle-burger
+/* .middle-burger-a
+
+    .down-burger-a
+ */
+@keyframes up-burger
+    0%
+        transform: translate(0, 0) rotate(0deg)
+    100%
+        transform: translate(0,16px) rotate(45deg)
+
+@keyframes down-burger
+    0%
+        transform: translate(0, 0) rotate(0deg)
+    100%
+        transform: translate(0,-16px) rotate(135deg)
+    
+@keyframes middle-burger
+    0%
+        transform: scale(1)
+    100%
+        transform: scale(0)
+
+@keyframes hoverLogo
+    100%
+        transform: scale(1.1)

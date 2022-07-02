@@ -1,0 +1,13 @@
+{
+  "name": "empresasinnombre",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "sas:dev": "sass --watch sass/style.sass css/style.css"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.48",
+    "sass": "^1.53.0"
+  }
+}

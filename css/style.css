@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.left {
+  width: 60%;
+}
+
+header {
+  min-height: 90vh;
+}
+
+body {
+  font-family: Roboto, arial, "sans serif";
+}
+
+.dark-mode, body {
+  background-color: rgb(25, 25, 25);
+  color: azure;
+}
+
+nav {
+  padding: 8px;
+}
+
+#logo:hover {
+  animation: 1s ease-in hoverLogo;
+  transform: scale(1.1);
+}
+
+.burger {
+  min-width: 100px;
+  padding: 16px;
+}
+.burger div {
+  height: 8px;
+  width: 80%;
+  background-color: azure;
+  border-radius: 4px;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+  gap: 8px;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-b {
+  justify-content: space-between;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.up-burger-a {
+  transform: translate(0, 16px) rotate(45deg);
+  animation: 1s up-burger;
+}
+
+.down-burger-a {
+  transform: translate(0, -16px) rotate(135deg);
+  animation: 1s down-burger;
+}
+
+.middle-burger-a {
+  transform: scale(0);
+  animation: 1s middle-burger;
+}
+
+/* .middle-burger-a
+ *
+ *  .down-burger-a
+ * */
+@keyframes up-burger {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 16px) rotate(45deg);
+  }
+}
+@keyframes down-burger {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, -16px) rotate(135deg);
+  }
+}
+@keyframes middle-burger {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes hoverLogo {
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
