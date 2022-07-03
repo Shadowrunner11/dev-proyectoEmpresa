@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
-@import url('./sass/keyframes')
+@import url('./keyframes.css')
 
 $defaulSpacing: 16px
 $smallWidth: 100px
@@ -91,6 +91,7 @@ nav, footer
     display: flex
     flex-wrap: wrap
     margin-bottom: 4%
+    gap: $defaulSpacing
 
 .card
     box-shadow: 0 4px 8px 0 rgba(255,255,255,0.2)
@@ -98,8 +99,11 @@ nav, footer
     border-radius: 5px
     width: 32%
     margin-top: 4%
+
     &:hover
         box-shadow: 0 8px 16px 0 rgba(255,255,255,0.2)
+        transform: scale(1.1)
+
     img
         border-radius: 5px 5px 0 0
         width: 100%
