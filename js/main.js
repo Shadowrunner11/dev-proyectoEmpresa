@@ -16,6 +16,7 @@ $( document ).ready(()=>{
         else
             $("#hello-world").text(text+"|")
         cont++
+        hljs.highlightAll()
         if (cont>text.length+10) cont = 1
     },300)
 })
