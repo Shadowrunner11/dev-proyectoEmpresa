@@ -10,7 +10,7 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "ignorePatterns":["js/*.min.js"],
     "rules": {
-    },
-    "ignorePatterns":["./js/*.min.js"]
+    }
 }
