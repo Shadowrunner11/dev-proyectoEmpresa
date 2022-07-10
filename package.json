@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "sass:dev": "sass --watch sass:css/"
+    "sass:dev": "sass --watch sass:css/",
+    "lite-server": "lite-server"
   },
   "devDependencies": {
     "esbuild": "^0.14.48",
@@ -13,6 +14,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "lite-server": "^2.6.1",
     "sass": "^1.53.0"
   }
 }
