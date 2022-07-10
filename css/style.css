@@ -228,6 +228,10 @@ nav, footer {
     font-size: 28px;
   }
 }
+#wrapper {
+  min-height: 100vh;
+}
+
 @media (prefers-color-scheme: light) {
   #wrapper {
     background: azure;
