@@ -12,32 +12,40 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/hl.css">
-    <link rel="icon" href="./assets/logoWalo.svg" type="image/svg+xml">
+    <link rel="icon" href="./assets/logoWalo.svg" type="image/svg+xml" charset=utf-8>
     <title>Walo Ware</title>
 </head>
 
 <body>
     <div id="wrapper" class="dark-mode">
-        <nav class="flex flex-center flex-space-b">
+        <nav class="flex flex-center">
             <!-- <img id="logo"
                 src="https://img.icons8.com/external-flaticons-flat-circular-flat-icons/128/000000/external-transistor-engineering-flaticons-flat-circular-flat-icons.png"
                 alt="icono transistor" /> -->
-            <div class="flex flex-center">
-                <img id="logo"
-                    src="./assets/logoWalo.svg"
-                    alt="logo walo ware" />
-                <h3 class="walo-text">Walo Ware Academy</h3>
+            <div class="flex flex-center flex-space-b">
+                <div class="flex flex-center">
+                    <img id="logo"
+                        src="./assets/logoWalo.svg"
+                        alt="logo walo ware" />
+                    <h3 class="walo-text">Walo Ware Academy</h3>
+                </div>
+                
+                <div class="flex flex-center flex-column burger">
+                    <div id="up-burger"></div>
+                    <div id="middle-burger"></div>
+                    <div id="down-burger"></div>
+                </div>
             </div>
-            <ul class="hidden">
-                <li class="alt-button default-button"><a>Log in</a></li>
-                <li class="themed-button default-button"><a>Sing up</a></li>
+            
+            <ul id="links" class="hidden">
+                <li>
+                    <ul class="flex flex-center">
+                        <li class="alt-button default-button"><a>Log in</a></li>
+                        <li class="themed-button default-button"><a>Sing up</a></li>
+                    </ul>
+                </li> 
                 <li></li>
             </ul>
-            <div class="flex flex-center flex-column burger">
-                <div id="up-burger"></div>
-                <div id="middle-burger"></div>
-                <div id="down-burger"></div>
-            </div>
         </nav>
         <header class="flex flex-center">
             <div class="flex flex-center left flex-column">

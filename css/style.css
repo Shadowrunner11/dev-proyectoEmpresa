@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("./buttons.css");
 @import url("./keyframes.css");
+.hidden {
+  display: none;
+  width: 100%;
+}
+
 .walo-text {
   color: #1FD19C;
   font-size: 20px;
@@ -9,12 +14,13 @@
 .left {
   padding: 0 min(20px, 10%);
   width: 80%;
+  margin-bottom: 40px;
+  min-height: 200px;
 }
 
 .right {
   width: 100%;
   align-items: center;
-  max-height: 600px;
 }
 .right img {
   width: 92%;
@@ -33,6 +39,20 @@ body {
 .dark-mode, body {
   background-color: rgb(25, 25, 25);
   color: azure;
+}
+
+nav {
+  background: #262626;
+  flex-direction: column;
+}
+nav > div {
+  width: 100%;
+}
+nav > ul {
+  border-top: 1px solid white;
+}
+nav > ul li {
+  margin: 16px;
 }
 
 nav, footer {
@@ -146,7 +166,7 @@ nav, footer {
 
 .pre-preserve {
   width: 100%;
-  min-height: 400px;
+  min-height: max(40vh, 300px);
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
@@ -156,10 +176,6 @@ nav, footer {
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
-}
-
-.hidden {
-  display: none;
 }
 
 @media (min-width: 550px) {
@@ -186,6 +202,13 @@ nav, footer {
   .hidden {
     display: flex;
     gap: 16px;
+    width: auto;
+  }
+  nav {
+    flex-direction: row;
+  }
+  nav > ul {
+    border-top: none;
   }
 }
 @media (min-width: 1320px) {
