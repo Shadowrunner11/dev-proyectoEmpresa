@@ -15,18 +15,19 @@ $border: 1px solid white
     font-size: 20px
 
 .left
-    width: 60%
+    width: 80%
 
 
 .right
-    width: 40%
+    width: 100%
     align-items: center
 
     img
         width: 92%
 
 header
-    min-height: 90vh
+    min-height: 60vh
+    flex-direction: column-reverse
 
 body
     font-family: Roboto, arial, 'sans serif'
@@ -116,3 +117,28 @@ nav, footer
             padding: 4%
         p
             padding: 4%
+
+#img-section
+    width: 100%
+    height: 50%
+    background-size: 80%
+    background-repeat: no-repeat
+    background-position: center
+    background-image: url("../assets/helloWord.svg")
+    text-align: center
+    padding: 50% 0
+    color: $dark
+
+#hello-world
+    text-align: left
+    margin: 0 20%
+    color: $dark
+    font-weight: bolder
+
+@media (min-width:650px)
+    .right
+        width: 40%
+    .left
+        width: 60%
+    header
+        flex-direction: row 
