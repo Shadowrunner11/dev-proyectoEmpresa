@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "sas:dev": "sass --watch sass/style.sass css/style.css"
+    "sass:dev": "sass --watch sass:css/"
   },
   "devDependencies": {
     "esbuild": "^0.14.48",
