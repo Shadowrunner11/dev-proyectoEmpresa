@@ -42,9 +42,14 @@ body
     font-family: Roboto, arial, 'sans serif'
     font-size: $fontSmall
 
-.dark-mode, body
+.dark-mode
     background-color: $dark
     color: $ligth
+
+.light-mode
+    background-color: $ligth
+    color: $dark
+
 nav
     background: #262626
     flex-direction: column
@@ -63,6 +68,9 @@ nav, footer
     &:hover
         animation: 1s ease-in hoverLogo
         transform: scale(1.1)
+#moon
+    width: 100%
+    height: 40px
 
 .burger
     min-width: $smallWidth
@@ -155,7 +163,7 @@ nav, footer
     background-size: 80%
     background-repeat: no-repeat
     background-position: center
-    background-image: url("../assets/helloWord.svg")
+    background-image: url("../assets/helloWolrd.svg")
     white-space: pre-wrap
     white-space: -moz-pre-wrap
     white-space: -pre-wrap
@@ -182,6 +190,8 @@ nav, footer
         display: flex
         gap: $defaulSpacing
         width: auto
+        align-items: center
+        justify-content: center
     nav
         flex-direction: row
         & > ul
@@ -191,4 +201,14 @@ nav, footer
     body
         font-size: $fontBig
 
+
+@media (prefers-color-scheme: light)
+  #wrapper
+    background: $ligth
+    color: $dark
+
+@media (prefers-color-scheme: dark)
+  main, header
+    background: $dark
+    color: $ligth
 

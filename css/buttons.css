@@ -1,3 +1,8 @@
+button {
+  background: none;
+  border: none;
+}
+
 .default-button {
   border-radius: 10px;
   padding: 1rem;

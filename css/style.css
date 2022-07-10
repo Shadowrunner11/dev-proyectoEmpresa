@@ -36,9 +36,14 @@ body {
   font-size: 16px;
 }
 
-.dark-mode, body {
+.dark-mode {
   background-color: rgb(25, 25, 25);
   color: azure;
+}
+
+.light-mode {
+  background-color: azure;
+  color: rgb(25, 25, 25);
 }
 
 nav {
@@ -65,6 +70,11 @@ nav, footer {
 #logo:hover {
   animation: 1s ease-in hoverLogo;
   transform: scale(1.1);
+}
+
+#moon {
+  width: 100%;
+  height: 40px;
 }
 
 .burger {
@@ -170,7 +180,7 @@ nav, footer {
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../assets/helloWord.svg");
+  background-image: url("../assets/helloWolrd.svg");
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   white-space: -pre-wrap;
@@ -203,6 +213,8 @@ nav, footer {
     display: flex;
     gap: 16px;
     width: auto;
+    align-items: center;
+    justify-content: center;
   }
   nav {
     flex-direction: row;
@@ -214,6 +226,18 @@ nav, footer {
 @media (min-width: 1320px) {
   body {
     font-size: 28px;
+  }
+}
+@media (prefers-color-scheme: light) {
+  #wrapper {
+    background: azure;
+    color: rgb(25, 25, 25);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  main, header {
+    background: rgb(25, 25, 25);
+    color: azure;
   }
 }
 
