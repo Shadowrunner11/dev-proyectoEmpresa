@@ -12,5 +12,6 @@
     },
     "ignorePatterns":["js/*.min.js"],
     "rules": {
+        "no-console":"warn"
     }
 }
