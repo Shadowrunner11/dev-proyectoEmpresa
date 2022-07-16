@@ -8,10 +8,12 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/hl.min.js"></script>
     <script>hljs.highlightAll();</script>
+
     <script src="./js/main.js" type="module"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/hl.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="icon" href="./assets/logoWalo.svg" type="image/svg+xml" charset=utf-8>
     <title>Walo Ware</title>
 </head>
@@ -66,7 +68,7 @@
         </header>
         <main>
             <section class="flex flex-center cards">
-                <div class="card">
+                <div class="card wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.2s">
                     <img src="https://browsecat.net/sites/default/files/js-wallpapers-111810-939962-9490819.png"
                         alt="jsbeginners">
                     <div class="container">
@@ -74,7 +76,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
                     <img src="https://browsecat.net/sites/default/files/js-wallpapers-111810-939962-9490819.png"
                         alt="jsintermediate">
                     <div class="container">
@@ -82,14 +84,14 @@
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
                     <img src="https://wallpapercave.com/wp/wp5070716.jpg" alt="backend">
                     <div class="container">
                         <h4><b>Backend NodeJS</b></h4>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
                     <img src="https://phantomlandscapes.files.wordpress.com/2021/04/html-css-javascript.jpg"
                         alt="fronted">
                     <div class="container">
@@ -103,6 +105,10 @@
             <p>#littledev</p>
             <p>All rights reserved®</p>
         </footer>
+        <script src="./js/wow.min.js"></script>
+        <script>
+          new WOW().init();
+        </script>
     </div>
 </body>
 
