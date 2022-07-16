@@ -1,26 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
 @import url('./buttons.css')
+@import url('./theme.css')
 @import url('./keyframes.css')
+
 
 $defaulSpacing: 16px
 $smallWidth: 100px
 $ligth: azure
-$dark: rgb(25,25,25)
+$dark: #191919
 $defaulBorderR: 4px
 $animationMinDurarion: 1s
 $border: 1px solid white
 
 $fontSmall: 16px
 $fontMedium: 20px
-$fontBig: 28px
+$fontBig: 24px
+
+
+main, header
+    max-width: 1928px
 
 .hidden
     display: none
     width: 100%
 
-.walo-text
-    color: #1FD19C
-    font-size: 20px
+
 
 .left
     padding: 0 min(20px,10%)
@@ -35,36 +39,37 @@ $fontBig: 28px
         width: 96%
 
 header
+    width: 100%
     min-height: 60vh
     flex-direction: column-reverse
+    padding: $defaulSpacing
+    padding-top: 10vh
 
 body
     font-family: Roboto, arial, 'sans serif'
     font-size: $fontSmall
 
-.dark-mode
-    background-color: $dark
-    color: $ligth
-
-.light-mode
-    background-color: $ligth
-    color: $dark
 
 nav
+    width: 100%
     background: #262626
     flex-direction: column
+    position: fixed
+    z-index: 5000
     & > div
         width: 100%
     & > ul
         border-top: $border
         li
             margin: $defaulSpacing
+            text-align: center
 
 nav, footer
     padding: calc($defaulSpacing)
 
 #logo
-    width: $smallWidth
+    width: 60px
+    height: 100%
     &:hover
         animation: 1s ease-in hoverLogo
         transform: scale(1.1)
@@ -134,6 +139,7 @@ nav, footer
     &:hover
         box-shadow: 0 8px 16px 0 rgba(255,255,255,0.2)
         transform: scale(1.1)
+        z-index: 0
 
     img
         border-radius: 4px 4px 0 0
@@ -156,6 +162,7 @@ nav, footer
     width: 80%
     color: $dark
     font-weight: bolder
+    background: none
 
 .pre-preserve
     width: 100%
@@ -169,7 +176,6 @@ nav, footer
     white-space: -pre-wrap
     white-space: -o-pre-wrap
     word-wrap: break-word
-
 
 @media (min-width:550px)
     body
@@ -193,13 +199,17 @@ nav, footer
         align-items: center
         justify-content: center
     nav
+        height: 88px
         flex-direction: row
         & > ul
             border-top: none
- 
+
 @media (min-width:1320px)
     body
         font-size: $fontBig
+
+#change-theme
+    min-width: 40px
 
 #wrapper
     min-height: 100vh

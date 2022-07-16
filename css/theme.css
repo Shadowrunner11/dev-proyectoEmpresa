@@ -1,0 +1,16 @@
+.dark-mode {
+  background-color: #191919;
+  color: azure;
+}
+
+.light-mode {
+  background-color: azure;
+  color: #191919;
+}
+
+area.walo-text {
+  color: #1FD19C;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=theme.css.map */

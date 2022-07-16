@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("./buttons.css");
+@import url("./theme.css");
 @import url("./keyframes.css");
+main, header {
+  max-width: 1928px;
+}
+
 .hidden {
   display: none;
   width: 100%;
-}
-
-.walo-text {
-  color: #1FD19C;
-  font-size: 20px;
 }
 
 .left {
@@ -27,8 +27,11 @@
 }
 
 header {
+  width: 100%;
   min-height: 60vh;
   flex-direction: column-reverse;
+  padding: 16px;
+  padding-top: 10vh;
 }
 
 body {
@@ -36,19 +39,12 @@ body {
   font-size: 16px;
 }
 
-.dark-mode {
-  background-color: rgb(25, 25, 25);
-  color: azure;
-}
-
-.light-mode {
-  background-color: azure;
-  color: rgb(25, 25, 25);
-}
-
 nav {
+  width: 100%;
   background: #262626;
   flex-direction: column;
+  position: fixed;
+  z-index: 5000;
 }
 nav > div {
   width: 100%;
@@ -58,6 +54,7 @@ nav > ul {
 }
 nav > ul li {
   margin: 16px;
+  text-align: center;
 }
 
 nav, footer {
@@ -65,7 +62,8 @@ nav, footer {
 }
 
 #logo {
-  width: 100px;
+  width: 60px;
+  height: 100%;
 }
 #logo:hover {
   animation: 1s ease-in hoverLogo;
@@ -146,6 +144,7 @@ nav, footer {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
   transform: scale(1.1);
+  z-index: 0;
 }
 .card img {
   border-radius: 4px 4px 0 0;
@@ -164,14 +163,15 @@ nav, footer {
 #img-section {
   width: 100%;
   min-height: 400px;
-  color: rgb(25, 25, 25);
+  color: #191919;
 }
 
 #hello-world {
   text-align: left;
   width: 80%;
-  color: rgb(25, 25, 25);
+  color: #191919;
   font-weight: bolder;
+  background: none;
 }
 
 .pre-preserve {
@@ -217,6 +217,7 @@ nav, footer {
     justify-content: center;
   }
   nav {
+    height: 88px;
     flex-direction: row;
   }
   nav > ul {
@@ -225,9 +226,13 @@ nav, footer {
 }
 @media (min-width: 1320px) {
   body {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
+#change-theme {
+  min-width: 40px;
+}
+
 #wrapper {
   min-height: 100vh;
 }

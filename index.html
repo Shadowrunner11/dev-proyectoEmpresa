@@ -1,115 +1,89 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/hl.min.js"></script>
-    <script>hljs.highlightAll();</script>
-
     <script src="./js/main.js" type="module"></script>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/hl.css">
     <link rel="stylesheet" href="./css/animate.css">
-    <link rel="icon" href="./assets/logoWalo.svg" type="image/svg+xml" charset=utf-8>
+    <link rel="icon" href="./assets/logoWalo.svg" type="image/svg+xml" charset="utf-8">
     <title>Walo Ware</title>
-</head>
-
-<body>
-    <div id="wrapper" class="dark-mode">
-        <nav class="flex flex-center">
-            <!-- <img id="logo"
-                src="https://img.icons8.com/external-flaticons-flat-circular-flat-icons/128/000000/external-transistor-engineering-flaticons-flat-circular-flat-icons.png"
-                alt="icono transistor" /> -->
-            <div class="flex flex-center flex-space-b">
-                <div class="flex flex-center">
-                    <img id="logo"
-                        src="./assets/logoWalo.svg"
-                        alt="logo walo ware" />
-                    <h3 class="walo-text">Walo Ware Academy</h3>
-                </div>
-                
-                <button type="button" class="flex flex-center flex-column burger">
-                    <div id="up-burger"></div>
-                    <div id="middle-burger"></div>
-                    <div id="down-burger"></div>
-                </button>
-            </div>
-            
-            <ul id="links" class="hidden">
-                <li>
-                    <ul class="flex flex-center">
-                        <li class="alt-button default-button"><a>Log in</a></li>
-                        <li class="themed-button default-button"><a>Sing up</a></li>
-                    </ul>
-                </li> 
-                <li><button type="button" id="change-theme" class="default-button flex flex-center">
-                    <img id="moon" src="./assets/moon.svg" alt="moon">
-                </button></li>
+  </head>
+  <body>
+    <div class="dark-mode" id="wrapper">
+      <nav class="flex flex-center">
+        <div class="flex flex-center flex-space-b">
+          <div class="flex flex-center"><img id="logo" src="./assets/logoWalo.svg" alt="logo walo ware">
+            <h3><a class="walo-text" href="/">Walo Ware Academy</a></h3>
+          </div>
+          <button class="flex flex-center flex-column burger" type="button">
+            <div id="up-burger"></div>
+            <div id="middle-burger"></div>
+            <div id="down-burger"></div>
+          </button>
+        </div>
+        <ul class="hidden" id="links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#cursos">Cursos</a></li>
+          <li>
+            <ul class="flex flex-center">
+              <li class="alt-button default-button"><a>Log in</a></li>
+              <li class="themed-button default-button"><a>Sing up</a></li>
             </ul>
-        </nav>
-        <header class="flex flex-center">
-            <div class="flex flex-center left flex-column">
-                <h1>
-                    Bienvenidos a Walo Ware Academy
-                </h1>
-                <p>
-                    Estamos comprometidos con la creación de contenido pedagógico en programación e informática
-                </p>
+          </li>
+          <li class="flex flex-center">
+            <button class="default-button flex flex-center" id="change-theme" type="button"><img id="moon" src="./assets/moon.svg" alt="moon"></button>
+          </li>
+        </ul>
+      </nav>
+      <header class="flex flex-center">
+        <div class="flex flex-center left flex-column wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+          <h1>Bienvenidos a Walo Ware Academy</h1>
+          <p>Estamos comprometidos con la creaci&oacute;n de contenido pedag&oacute;gico en programaci&oacute;n e inform&aacute;tica</p>
+        </div>
+        <div class="flex right" id="header-right">
+          <pre class="pre-preserve flex flex-center"><code class="language-javascript" id="hello-world"></code></pre>
+        </div>
+      </header>
+      <main>
+        <section class="flex flex-center cards" id="cursos">
+          <div class="card wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.2s"><img src="https://browsecat.net/sites/default/files/js-wallpapers-111810-939962-9490819.png" alt="js beginners">
+            <div class="container">
+              <h4>JS | Beginners</h4>
+              <p>En este curso aprenderemos sobre algoritmos y conceptos basicos de js</p>
             </div>
-            <div id="header-right" class="flex right">
-                    <pre class="pre-preserve flex flex-center">
-                        <code id="hello-world" class="language-javascript"></code>
-                    </pre>
+          </div>
+          <div class="card wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.2s"><img src="https://browsecat.net/sites/default/files/js-wallpapers-111810-939962-9490819.png" alt="js intermedio">
+            <div class="container">
+              <h4>JS | Intemediate</h4>
+              <p>En este curso aprenderemos estructuras de datos, asincronia y otros temas mas avanzados</p>
             </div>
-        </header>
-        <main>
-            <section class="flex flex-center cards">
-                <div class="card wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <img src="https://browsecat.net/sites/default/files/js-wallpapers-111810-939962-9490819.png"
-                        alt="jsbeginners">
-                    <div class="container">
-                        <h4><b>JS | Beginners</b></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
-                <div class="card wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <img src="https://browsecat.net/sites/default/files/js-wallpapers-111810-939962-9490819.png"
-                        alt="jsintermediate">
-                    <div class="container">
-                        <h4><b>JS | Intemediate</b></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
-                <div class="card wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <img src="https://wallpapercave.com/wp/wp5070716.jpg" alt="backend">
-                    <div class="container">
-                        <h4><b>Backend NodeJS</b></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
-                <div class="card wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <img src="https://phantomlandscapes.files.wordpress.com/2021/04/html-css-javascript.jpg"
-                        alt="fronted">
-                    <div class="container">
-                        <h4><b>Frontend | Beginners</b></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="flex flex-space-b">
-            <p>#littledev</p>
-            <p>All rights reserved®</p>
-        </footer>
-        <script src="./js/wow.min.js"></script>
-        <script>
-          new WOW().init();
-        </script>
+          </div>
+          <div class="card wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.2s"><img src="https://wallpapercave.com/wp/wp5070716.jpg" alt="backend nodejs">
+            <div class="container">
+              <h4>Backend NodeJS</h4>
+              <p>Aprenderemos a crear una api que se consuma atraves del protocolo HTTP</p>
+            </div>
+          </div>
+          <div class="card wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.2s"><img src="https://phantomlandscapes.files.wordpress.com/2021/04/html-css-javascript.jpg" alt="frontend">
+            <div class="container">
+              <h4>Frontend | Beginners</h4>
+              <p>Aprenderemos conceptos basicos que integran HTML5 CSS3 y JS</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="flex flex-space-b">
+        <p>#littledev</p>
+        <p>All rights reserved®</p>
+      </footer>
+      <script src="./js/wow.min.js"></script>
+      <script>new WOW().init();</script>
     </div>
-</body>
-
+  </body>
 </html>
